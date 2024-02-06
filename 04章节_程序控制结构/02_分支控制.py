@@ -75,3 +75,73 @@ if 0 <= score <= 100:
         print("没有奖励")
 else:
     print("你输入的分数不合法")
+
+"""
+④ 嵌套分支基本语法
+if 条件表达式1:
+    if 条件表达式2:
+    #if-else...
+    else:
+    #if-else...
+else:
+    代码块
+- 说明
+1、嵌套分支：在一个分支结构中又嵌套了另一个分支结构
+2、里面的分支的结构称为内层分支，外面的分支结构称为外层分支
+3、规范：不要超过3层（可读性不好）
+"""
+print("---" * 20)
+content4 = """
+1、参加歌手比赛，如果初赛成绩大于8.0进入决赛，否则提示淘汰。并且根据性别提示进入男子组或女子组,输入成绩和性别，进行判断和输出信息。
+"""
+print(f"demo4:{content4}")
+score = float(input("请输入你的初赛分数："))
+if 0 <= score <= 10.0:
+    if score > 8.0:
+        print("恭喜，你已进入决赛")
+        gender = input("请输入你的性别：")
+        if gender == "男" or "boy":
+            print("你已被分配到男子组")
+            print(f"你的成绩是：{score}, 你的性别是：{gender}")
+        elif gender == "女" or "girl":
+            print("你已被分配到女子组")
+            print(f"你的成绩是：{score}, 你的性别是：{gender}")
+        else:
+            print("你的性别不符合当前比赛的报名机制，请回炉重造！！！")
+    else:
+        print("抱歉，你已被淘汰")
+else:
+    print("你输入的分数不合法")
+
+print("---" * 20)
+content5 = """
+2、出票系统：根据淡旺季的月份和年龄，打印票价
+4-10旺季：
+成人（18-60）：60
+儿童（<18）：半价
+老人（>60）：1/3
+淡季：
+成人：40
+其他：20
+"""
+print(f"demo5:{content5}")
+year = int(input("请输入你的年龄："))
+month = int(input("请输入当前月份："))
+if year >= 0:
+    if score > 8.0:
+        print("恭喜，你已进入决赛")
+        gender = input("请输入你的性别：")
+        if gender == "男" or "boy":
+            print("你已被分配到男子组")
+            print(f"你的成绩是：{score}, 你的性别是：{gender}")
+        elif gender == "女" or "girl":
+            print("你已被分配到女子组")
+            print(f"你的成绩是：{score}, 你的性别是：{gender}")
+        else:
+            print("你的性别不符合当前比赛的报名机制，请回炉重造！！！")
+    else:
+        print("抱歉，你已被淘汰")
+else:
+    print("你输入的分数不合法")
+
+
