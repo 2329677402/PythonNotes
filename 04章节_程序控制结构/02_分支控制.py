@@ -1,5 +1,5 @@
 """
-分支结构有：单分支、 双分支、 多分支
+分支结构有：单分支、 双分支、 多分支、 嵌套分支
 """
 
 """
@@ -126,22 +126,21 @@ content5 = """
 """
 print(f"demo5:{content5}")
 year = int(input("请输入你的年龄："))
-month = int(input("请输入当前月份："))
 if year >= 0:
-    if score > 8.0:
-        print("恭喜，你已进入决赛")
-        gender = input("请输入你的性别：")
-        if gender == "男" or "boy":
-            print("你已被分配到男子组")
-            print(f"你的成绩是：{score}, 你的性别是：{gender}")
-        elif gender == "女" or "girl":
-            print("你已被分配到女子组")
-            print(f"你的成绩是：{score}, 你的性别是：{gender}")
+    month = int(input("请输入当前月份："))
+    if 4 <= month <= 10:
+        if 0 <= year < 18:
+            print("当前你的票价是：30")
+        elif 18 <= year <= 60:
+            print("当前你的票价是：60")
         else:
-            print("你的性别不符合当前比赛的报名机制，请回炉重造！！！")
+            print("当前你的票价是：20")
+    elif 1 <= month < 4 or 10 < month <= 12:
+        if 18 <= year <= 60:
+            print("当前你的票价是：40")
+        else:
+            print("当前你的票价是：20")
     else:
-        print("抱歉，你已被淘汰")
+        print("你输入的月份不合法！")
 else:
-    print("你输入的分数不合法")
-
-
+    print("你输入的年龄不合法！")
