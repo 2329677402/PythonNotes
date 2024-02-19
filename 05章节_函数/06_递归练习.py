@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 """
 斐波那契数列、猴子吃桃问题、汉诺塔问题
 """
+=======
+>>>>>>> b361b38c4adcc0b1bfec32a13d8ce5e2935f60c6
 print("---" * 20)
 content1 = "请使用递归的方式求出斐波那契数1,1,2,3,5,8,13...给你一个整数n，求出它的值是多少？(即：第n个位置对应的斐波那契数)"
 print(f"demo1:{content1}")
@@ -101,4 +104,8 @@ def hanoi_tower(num, a, b, c):
         hanoi_tower(num - 1, b, a, c)
 
 
+<<<<<<< HEAD
 hanoi_tower(10, "A", "B", "C")
+=======
+print(hanoi_tower(1, "A", "B", "C"))
+>>>>>>> b361b38c4adcc0b1bfec32a13d8ce5e2935f60c6
