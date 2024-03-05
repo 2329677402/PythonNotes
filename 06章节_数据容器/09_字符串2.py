@@ -34,7 +34,7 @@ print(str1)  # tom jack mary nono smith 老韩
 str2 = ""
 print(id(str2))  # 1673854943280
 for i in list1:
-    # isalpha方法:如果字符串中的所有字符都为字符并且至少有一个字符则返回True,否则返回False.
+    # isalpha方法:如果字符串中的所有字符都为字符并且至少有一个字符则返回True,否则返回False.筛选出英文名
     if i.isalpha():
         # capitalize方法:返回原字符串的副本,首字符大写,其余小写.
         # 将list1中遍历的元素追加到空字符串str2中,并以" "符号间隔
