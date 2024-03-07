@@ -2,7 +2,7 @@
 列表的注意事项和使用细节
 """
 
-# 1、如果我们需要一个空列表，可以通过[]，或者list()方式来定义
+# 1、如果我们需要一个空列表，可以通过list_test = [] 或 list_test = list()方式来定义
 list1 = []
 list2 = list()
 print(list1, type(list1))  # [] <class 'list'>
