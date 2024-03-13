@@ -14,7 +14,6 @@
 - 列表的遍历
     将列表的每个元素依次取出，进行处理的操作，就是遍历/迭代
 """
-
 # 定义列表
 list1 = [100, 200, 300, 400, 500]
 
@@ -24,7 +23,6 @@ print(type(list1))  # <class 'list'>
 print(list1[0])  # 100
 print(list1[4])  # 500
 # print(list1[5])  # IndexError
-
 
 # Python内置函数len():返回对象的长度(元素个数)
 print(len(list1))  # 5
@@ -38,6 +36,13 @@ while index < len(list1):
 # for遍历列表
 for i in list1:
     print(i)
+"""
+100
+200
+300
+400
+500
+"""
 
 print("-----使用列表解决养鸡场问题-----")
 # 使用数据容器-列表,接收所有小鸡体重

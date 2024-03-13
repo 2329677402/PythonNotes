@@ -16,7 +16,7 @@ avg_weight = total_weight / 6
 # Python内置函数round(number, ndigits=None):返回 number 舍入到小数点后 ndigits 位精度的值.如果 ndigits 被省略或为 None，则返回最接近输入值的整数
 # https://docs.python.org/zh-cn/3.11/library/functions.html#round
 print(round(25.567, 2))  # 25.57
-print(f"总体重是:{total_weight},平均体重是:{round(avg_weight, 1)}")
+print(f"总体重是:{total_weight},平均体重是:{round(avg_weight, 1)}")  # 总体重是:64.4,平均体重是:10.7
 
 """
 数据容器
