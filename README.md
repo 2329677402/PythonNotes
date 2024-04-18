@@ -1816,7 +1816,7 @@ Console Result:
 clerks['0020'] = {
     "age": 22,
     "name": "韩信",
-    "entry_time": "2024-03-15",
+    "entry_time": "2024-tt-15",
     "sal": 50000
 }
 print(clerks)

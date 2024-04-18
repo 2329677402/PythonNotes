@@ -36,7 +36,7 @@ def cry():
     print("小猫，喵喵喵...")
 
 
-cry()
+cry()  # 小猫，喵喵喵...
 
 print("---" * 20)
 content2 = "自定义cal01函数，可以计算从1+...+1000的结果"
@@ -50,7 +50,7 @@ def cal01(a, b):
     print(sum)
 
 
-cal01(1, 1000)
+cal01(1, 1000)  # 500500
 
 print("---" * 20)
 content3 = "自定义cal02函数，该函数可以接收一个数n，计算从1+...+n的结果"
@@ -66,6 +66,8 @@ def cal02():
 
 
 cal02()
+# 请输入整数：5
+# 15
 
 print("---" * 20)
 content4 = "自定义get_sum函数,可以计算两个数的和，并返回结果"
@@ -77,4 +79,4 @@ def get_sum(a, b):
 
 
 res = get_sum(10, 50)
-print(res)
+print(res)  # 60

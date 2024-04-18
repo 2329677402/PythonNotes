@@ -14,7 +14,7 @@ def f1():
     print("hi")
 
 
-r = f1()
+r = f1()  # hi
 # 函数中没有return语句,就返回None
-print("r :", r)
-print("r(id) :", id(r))
+print("r :", r)  # r : None
+print("r(id) :", id(r))  # r(id) : 140732879171264
